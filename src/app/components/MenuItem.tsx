@@ -35,6 +35,9 @@ const variants = {
 export default function MenuItem() {
   return (
     <>
+      <motion.li variants={variants} className="pl-4">
+        <Image src={DaiIcon} width={150} height={150} alt="Dai Icon" />
+      </motion.li>
       <motion.li
         variants={variants}
         className="flex content-center justify-center text-center mt-8 text-[1.30rem]"
@@ -96,9 +99,6 @@ export default function MenuItem() {
         }}
       >
         <p className={yaldevi.className}>LASH LIFTING</p>
-      </motion.li>
-      <motion.li variants={variants} className="pl-4">
-        <Image src={DaiIcon} width={150} height={150} alt="Dai Icon" />
       </motion.li>
     </>
   )
