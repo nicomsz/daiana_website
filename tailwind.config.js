@@ -15,6 +15,7 @@ module.exports = {
       colors: {
         'red-orange': '#F0997D',
         'pinkish-red': '#F49AC2',
+        'nav-bar-nude': '#DBB48C',
       },
     },
   },

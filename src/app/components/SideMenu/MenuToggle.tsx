@@ -1,4 +1,3 @@
-'use client'
 import * as React from 'react'
 import { motion } from 'framer-motion'
 
@@ -14,7 +13,7 @@ const Path = (props: any) => (
 
 export const MenuToggle = ({ toggle }: any) => (
   <button onClick={toggle}>
-    <svg width="50" height="23" viewBox="0 0 23 23">
+    <svg width="23" height="23" viewBox="0 0 23 23">
       <Path
         variants={{
           closed: { d: 'M 2 2.5 L 20 2.5' },
