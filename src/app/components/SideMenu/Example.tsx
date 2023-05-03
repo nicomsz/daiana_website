@@ -37,8 +37,12 @@ export const Example = () => {
       animate={isOpen ? 'open' : 'closed'}
       custom={height}
       ref={containerRef}
+      className="fixed"
     >
-      <motion.div className="background" variants={sidebar} />
+      <motion.div
+        className="background rounded-r-3xl rounded-bl-3xl bg-slate-100"
+        variants={sidebar}
+      />
       <Navigation />
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>

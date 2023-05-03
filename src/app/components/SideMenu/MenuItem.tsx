@@ -51,7 +51,7 @@ export default function MenuItem() {
       </motion.li>
       <motion.li
         variants={variants}
-        className="rounded-2xl bg-rose-200 p-[0.5rem] text-center text-lg"
+        className="rounded-2xl bg-menu-item-rose p-[0.5rem] text-center text-lg"
         whileHover={{
           scale: 1.1,
           transition: { duration: 1 },
@@ -61,7 +61,7 @@ export default function MenuItem() {
       </motion.li>
       <motion.li
         variants={variants}
-        className="rounded-2xl bg-red-orange p-2 text-center text-lg"
+        className="rounded-2xl bg-menu-item-rose p-2 text-center text-lg"
         whileHover={{
           scale: 1.1,
           transition: { duration: 1 },
@@ -71,7 +71,7 @@ export default function MenuItem() {
       </motion.li>
       <motion.li
         variants={variants}
-        className="rounded-2xl bg-pinkish-red p-[0.6rem] text-center text-lg"
+        className="rounded-2xl bg-menu-item-rose p-[0.6rem] text-center text-lg"
         whileHover={{
           scale: 1.1,
           transition: { duration: 1 },
@@ -81,7 +81,7 @@ export default function MenuItem() {
       </motion.li>
       <motion.li
         variants={variants}
-        className="rounded-2xl bg-red-orange p-[0.6rem] text-center text-lg"
+        className="rounded-2xl bg-menu-item-rose p-[0.6rem] text-center text-lg"
         whileHover={{
           scale: 1.1,
           transition: { duration: 1 },
@@ -92,13 +92,13 @@ export default function MenuItem() {
 
       <motion.li
         variants={variants}
-        className="rounded-2xl bg-pinkish-red p-[1.3rem] text-center text-lg"
+        className="rounded-2xl bg-menu-item-rose p-[1.3rem] text-center text-lg"
         whileHover={{
           scale: 1.1,
           transition: { duration: 1 },
         }}
       >
-        <p className={yaldevi.className}>LASH LIFTING</p>
+        <p className={`${yaldevi.className} pl-4`}>LASH LIFTING</p>
       </motion.li>
       <motion.li className="flex flex-row gap-12 pl-[10px]" variants={variants}>
         <a href="https://wa.me/+5547992879838" target="_blank" rel="noreferrer">
@@ -115,7 +115,6 @@ export default function MenuItem() {
             width={50}
             height={50}
             alt="Email Click to send email"
-            className=""
           />
         </a>
       </motion.li>

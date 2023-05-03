@@ -16,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={`${inter.className} w-full`}>{children}</body>
+      <body className={`${inter.className} w-full max-w-[2000px]`}>
+        {children}
+      </body>
     </html>
   )
 }
