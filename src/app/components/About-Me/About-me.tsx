@@ -14,16 +14,24 @@ const montserrat400 = Montserrat({
 })
 export default function AboutMe() {
   return (
-    <div className="h-screen">
-      <div className="ml-[300px] flex flex-row pt-[150px]">
-        <Image src={DaiPhoto} alt="Dai Photo" width={300} height={300} />
-        <div className="w-[800px] pl-[100px]">
-          <p className={`${montserrat400.className} text-6xl`}>SOBRE MIM</p>
+    <div className="w-full bg-background-color lg:h-screen">
+      <div className="ml-[8px] flex flex-row pr-[20px] pt-[80px] lg:ml-[100px] lg:pt-[100px]">
+        <Image
+          src={DaiPhoto}
+          alt="Dai Photo"
+          width={300}
+          height={300}
+          className="h-[150px] w-[150px] pt-2 lg:h-[350px] lg:w-[300px] lg:pt-0"
+        />
+        <div className="pl-[20px] lg:w-[800px] lg:pl-[100px]">
+          <p className={`${montserrat400.className} text-2xl lg:text-6xl`}>
+            SOBRE MIM
+          </p>
           <motion.div
-            className="h-[3px] w-[0%] bg-black"
+            className="h-[1.3px] w-[0%] bg-black lg:h-[3px]"
             whileInView={{ width: '100%', transitionDuration: '1.7s' }}
           ></motion.div>
-          <p className="pt-8 text-xl">
+          <p className="pt-5 text-[10.7px] lg:pt-8 lg:text-xl">
             Olá, me chamo Daiana . Um certo dia não me sentindo mais desafiada
             resolvi mudar o rumo do meu futuro. Desde 2016 em meio às
             oportunidades, buscando em diversos cursos voltados a técnicas de
@@ -39,14 +47,14 @@ export default function AboutMe() {
       </div>
       <div>
         <p
-          className={`${montserrat200.className} pt-[125px] text-center text-8xl`}
+          className={`${montserrat200.className} pt-[100px] text-center text-[26px] font-semibold lg:text-8xl`}
         >
           CONHEÇA MEUS SERVIÇOS:
         </p>
         <Image
           src={ArrowDown}
           alt="Arrow Down to Services"
-          className="mx-auto pt-8"
+          className="mx-auto h-[100px] w-[100px] pt-4 lg:h-[125px] lg:w-[125px] lg:pt-8 "
           width={125}
           height={125}
         />

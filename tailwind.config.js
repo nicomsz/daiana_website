@@ -21,6 +21,10 @@ module.exports = {
         'menu-item-rose': '#DCB8A3',
         'background-color': '#DEDCD6',
       },
+      screens: {
+        xxl: '1440px',
+        tablet: '640px'
+      },
     },
   },
   plugins: [],

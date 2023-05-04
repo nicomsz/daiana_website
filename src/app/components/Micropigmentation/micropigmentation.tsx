@@ -14,8 +14,8 @@ const josefinsans = JosefinSans({
 })
 export default function Micropigmentation() {
   return (
-    <div className="h-screen w-full">
-      <div className="text-center ">
+    <div className="h-screen w-full bg-background-color pt-8 lg:h-[1000px] lg:pt-20">
+      <div className="text-center">
         <div className="mx-auto w-fit">
           <motion.div
             className="flex h-[3px] w-[0%] bg-black"
@@ -25,7 +25,7 @@ export default function Micropigmentation() {
             }}
           ></motion.div>
           <p
-            className={`${josefinsans.className} pb-2 pt-7 text-7xl font-semibold`}
+            className={`${josefinsans.className} pb-2 pt-4 text-2xl font-semibold lg:pt-7 lg:text-7xl`}
           >
             MICROPIGMENTAÇÃO DE SOBRANCELHAS
           </p>
@@ -37,15 +37,15 @@ export default function Micropigmentation() {
             }}
           ></motion.div>
         </div>
-        <div className={montserrat400.className}>
-          <p className="pt-8 text-6xl">O que é?</p>
-          <p className="mx-16 pt-16 text-3xl">
+        <div className={`${montserrat400.className} `}>
+          <p className="pt-12 text-3xl lg:pt-20 lg:text-6xl">O que é?</p>
+          <p className="mx-4 pt-8 text-sm lg:mx-16 lg:pt-16  lg:text-3xl">
             Micropigmentação de Sobrancelhas é um procedimento estético que visa
             preencher e corrigir as falhas das sobrancelhas naturais depositando
             pigmento específico por meio de aparelho invasivo chamado
             dermógrafo.
           </p>
-          <p className="mx-16 pt-6 text-3xl">
+          <p className="mx-4 pt-3 text-sm lg:mx-16 lg:pt-16  lg:text-3xl">
             Com o dermógrafo, a profissional especializada é capaz de desenhar
             efeitos sombreados ou fios de que imitam os próprios fios naturais.
             É importante realizar o design e um projeto a lápis, antes de
@@ -56,7 +56,7 @@ export default function Micropigmentation() {
             alt="Eyebrow girl example"
             width={300}
             height={300}
-            className="mx-auto rounded-full"
+            className="mx-auto h-[220px] w-[175px] rounded-full pt-4 lg:h-[350px] lg:w-[300px] lg:pt-0"
           />
         </div>
       </div>

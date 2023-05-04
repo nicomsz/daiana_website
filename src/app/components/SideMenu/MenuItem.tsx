@@ -35,23 +35,32 @@ const variants = {
 export default function MenuItem() {
   return (
     <>
-      <motion.li variants={variants} className="-mb-4 -mt-12 pl-4">
-        <Image src={DaiIcon} width={150} height={150} alt="Dai Icon" />
+      <motion.li
+        variants={variants}
+        className="-mt-12 pl-[13px] lg:-mb-4 lg:pl-4 lg:pt-12"
+      >
+        <Image
+          src={DaiIcon}
+          width={150}
+          height={150}
+          alt="Dai Icon"
+          className="h-[120px] w-[120px] lg:h-[150px] lg:w-[150px]"
+        />
       </motion.li>
       <motion.li
         variants={variants}
-        className="mt-8 flex content-center justify-center text-center text-[1.30rem]"
+        className="mt-0 flex content-center justify-center text-center text-[1.15rem] lg:mt-8 lg:text-[1.30rem]"
       >
         <p className={yaldevi.className}>VOCÊ JÁ CONHEÇE</p>
       </motion.li>
       <motion.li variants={variants}>
-        <div className="text-[1.96rem]">
+        <div className="text-[1.61rem] lg:text-[1.96rem]">
           <p className={sacramento.className}>Nossos serviços?</p>
         </div>
       </motion.li>
       <motion.li
         variants={variants}
-        className="rounded-2xl bg-menu-item-rose p-[0.5rem] text-center text-lg"
+        className="rounded-2xl bg-menu-item-rose p-[0.5rem] text-center text-[0.9rem] lg:text-lg"
         whileHover={{
           scale: 1.1,
           transition: { duration: 1 },
@@ -61,7 +70,7 @@ export default function MenuItem() {
       </motion.li>
       <motion.li
         variants={variants}
-        className="rounded-2xl bg-menu-item-rose p-2 text-center text-lg"
+        className="rounded-2xl bg-menu-item-rose p-2 text-center text-[0.9rem] lg:text-lg"
         whileHover={{
           scale: 1.1,
           transition: { duration: 1 },
@@ -71,7 +80,7 @@ export default function MenuItem() {
       </motion.li>
       <motion.li
         variants={variants}
-        className="rounded-2xl bg-menu-item-rose p-[0.6rem] text-center text-lg"
+        className="rounded-2xl bg-menu-item-rose p-[0.6rem] text-center text-[0.9rem] lg:p-[17px] lg:text-lg"
         whileHover={{
           scale: 1.1,
           transition: { duration: 1 },
@@ -81,7 +90,7 @@ export default function MenuItem() {
       </motion.li>
       <motion.li
         variants={variants}
-        className="rounded-2xl bg-menu-item-rose p-[0.6rem] text-center text-lg"
+        className="rounded-2xl bg-menu-item-rose p-[0.6rem] text-center text-[0.9rem] lg:p-[17px] lg:text-lg"
         whileHover={{
           scale: 1.1,
           transition: { duration: 1 },
@@ -92,21 +101,25 @@ export default function MenuItem() {
 
       <motion.li
         variants={variants}
-        className="rounded-2xl bg-menu-item-rose p-[1.3rem] text-center text-lg"
+        className="rounded-2xl bg-menu-item-rose p-[1.3rem] text-center text-[0.9rem] lg:p-[17px] lg:text-lg"
         whileHover={{
           scale: 1.1,
           transition: { duration: 1 },
         }}
       >
-        <p className={`${yaldevi.className} pl-4`}>LASH LIFTING</p>
+        <p className={`${yaldevi.className} pl-3 lg:pl-8`}>LASH LIFTING</p>
       </motion.li>
-      <motion.li className="flex flex-row gap-12 pl-[10px]" variants={variants}>
+      <motion.li
+        className="flex flex-row gap-12 lg:pl-[20px]"
+        variants={variants}
+      >
         <a href="https://wa.me/+5547992879838" target="_blank" rel="noreferrer">
           <Image
             src={WhatsappIcon}
             width={50}
             height={50}
             alt="Whatsapp icon Click to talk"
+            className="h-[70px] w-[70px] lg:h-[50px] lg:w-[50px]"
           />
         </a>
         <a href="mailto:daianablu05@gmail.com">
@@ -115,6 +128,7 @@ export default function MenuItem() {
             width={50}
             height={50}
             alt="Email Click to send email"
+            className="h-[70px] w-[70px] lg:h-[50px] lg:w-[50px]"
           />
         </a>
       </motion.li>

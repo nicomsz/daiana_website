@@ -8,18 +8,14 @@ import Micropigmentation from './components/Micropigmentation/micropigmentation'
 
 export default function Home() {
   return (
-    <div className="w-full">
+    <>
       <nav>
         <NavBar />
       </nav>
-
       <Example />
-
       <Introduction />
-      <div className="bg-background-color">
-        <AboutMe />
-        <Micropigmentation />
-      </div>
-    </div>
+      <AboutMe />
+      <Micropigmentation />
+    </>
   )
 }

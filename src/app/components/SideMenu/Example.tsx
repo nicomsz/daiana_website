@@ -38,10 +38,10 @@ export const Example = () => {
       animate={isOpen ? 'open' : 'closed'}
       custom={height}
       ref={containerRef}
-      className="fixed sm:h-[1500px]"
+      className="fixed inset-y-0 h-[1000px] w-[300px]"
     >
       <motion.div
-        className="background rounded-r-3xl rounded-bl-3xl bg-slate-100"
+        className="absolute inset-y-0 left-0 h-[800px] w-[200px] rounded-r-3xl rounded-bl-3xl border-[0.5px] border-solid border-black bg-slate-100 lg:h-[915px] lg:w-[250px]"
         variants={sidebar}
       />
       <MenuToggle toggle={() => toggleOpen()} />

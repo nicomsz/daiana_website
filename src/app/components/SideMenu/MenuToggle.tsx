@@ -12,7 +12,10 @@ const Path = (props: any) => (
 )
 
 export const MenuToggle = ({ toggle }: any) => (
-  <button onClick={toggle}>
+  <button
+    onClick={toggle}
+    className="absolute left-[28px] top-[18px] h-[50px] w-[50px] cursor-pointer select-none rounded-[50%] border-none bg-transparent outline-0"
+  >
     <svg width="23" height="23" viewBox="0 0 23 23">
       <Path
         variants={{

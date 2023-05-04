@@ -13,7 +13,10 @@ const variants = {
 }
 
 export const Navigation = () => (
-  <motion.ul variants={variants} className="fixed rounded-md">
+  <motion.ul
+    variants={variants}
+    className="fixed w-[198px] rounded-md lg:w-[248px]"
+  >
     <MenuItem />
   </motion.ul>
 )
