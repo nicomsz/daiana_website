@@ -5,10 +5,11 @@ import { motion, useCycle } from 'framer-motion'
 import { useDimensions } from '../../hooks/useDimensions'
 import { MenuToggle } from './MenuToggle'
 import { Navigation } from './Navigation'
-
+const screenHeight = screen.height
+console.log(screenHeight)
 const sidebar = {
-  open: (height = 1000) => ({
-    clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+  open: () => ({
+    clipPath: `circle(${screenHeight + 300}px at 40px 40px)`,
     transition: {
       type: 'spring',
       stiffness: 20,
@@ -37,14 +38,14 @@ export const Example = () => {
       animate={isOpen ? 'open' : 'closed'}
       custom={height}
       ref={containerRef}
-      className="fixed"
+      className="fixed sm:h-[1500px]"
     >
       <motion.div
         className="background rounded-r-3xl rounded-bl-3xl bg-slate-100"
         variants={sidebar}
       />
-      <Navigation />
       <MenuToggle toggle={() => toggleOpen()} />
+      <Navigation />
     </motion.nav>
   )
 }

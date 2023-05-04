@@ -5,8 +5,8 @@ import Background from './Background'
 import { Montserrat } from '@next/font/google'
 import { motion } from 'framer-motion'
 
-const montserrat200 = Montserrat({
-  weight: '200',
+const montserrat300 = Montserrat({
+  weight: ['300', '200'],
   subsets: ['latin'],
 })
 const montserrat400 = Montserrat({
@@ -17,30 +17,30 @@ export default function Introduction() {
   return (
     <>
       <Background />
-      <div className="flex h-screen flex-row rounded-full pl-[100px] pr-12 pt-[300px]">
+      <div className="h-screen rounded-full pt-[100px] lg:mr-[200px] lg:flex lg:flex-row lg:pr-12 lg:pt-[300px]">
         <Image
           src={DaiImage}
           width={250}
           height={100}
           alt="Dai Photo"
           quality={100}
-          className="h-[250px] w-[250px]"
+          className="mx-auto h-[100px] w-[100px] lg:h-[300px] lg:w-[300px]"
         />
-        <div>
+        <div className="text-center">
           <p
-            className={`${montserrat400.className} -mt-8 pl-[250px] text-7xl text-title-brown`}
+            className={`${montserrat400.className} pt-2 text-2xl font-medium text-title-brown lg:-mt-8 lg:text-7xl `}
           >
             Olá, me chamo Dai Oliveira
           </p>
           <p
-            className={`${montserrat200.className} pl-[150px] pt-[25px] text-[53px] text-subtitle-home-green`}
+            className={`${montserrat300.className} pt-2 text-sm font-light text-subtitle-home-green lg:pt-[50px] lg:text-[53px]`}
           >
             TRABALHO COM SOBRANCELHAS E CÍLIOS
           </p>
           <div
-            className={`${montserrat400.className} flex flex-row pl-[100px] pr-2 pt-[75px] text-[70px] text-subtitle-home-green`}
+            className={`${montserrat400.className} pr-2 pt-[50px] text-center text-[20px] text-subtitle-home-green lg:pl-[px] lg:text-[70px]`}
           >
-            <div className="w-fit pl-6">
+            <div className="mx-auto w-fit">
               <p>SENTIR-SE BONITA MUDA TUDO</p>
               <motion.div
                 className="h-[3px] w-[0%] bg-subtitle-home-green"

@@ -14,6 +14,7 @@ export default function Home() {
       </nav>
 
       <Example />
+
       <Introduction />
       <div className="bg-background-color">
         <AboutMe />
