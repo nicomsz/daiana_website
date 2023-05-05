@@ -15,7 +15,7 @@ const josefinsans = JosefinSans({
 export default function Micropigmentation() {
   return (
     <div
-      className="h-screen w-full bg-background-color pt-8 lg:h-[1300px] lg:pt-20"
+      className="h-screen w-full bg-background-color pt-8 lg:h-full lg:pt-20"
       id="anchor"
     >
       <div className="text-center">
