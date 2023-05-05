@@ -5,11 +5,9 @@ import { motion, useCycle } from 'framer-motion'
 import { useDimensions } from '../../hooks/useDimensions'
 import { MenuToggle } from './MenuToggle'
 import { Navigation } from './Navigation'
-const screenHeight = screen.height
-console.log(screenHeight)
 const sidebar = {
   open: () => ({
-    clipPath: `circle(${screenHeight + 300}px at 40px 40px)`,
+    clipPath: `circle(${1080 + 300}px at 40px 40px)`,
     transition: {
       type: 'spring',
       stiffness: 20,

@@ -31,10 +31,11 @@ export default function Introduction() {
           xxl:mx-0 xxl:h-[300px] xxl:w-[300px]
           2xl:mx-0 2xl:h-[300px] 2xl:w-[300px]"
         />
-        <div className="w-full text-center tablet:w-[600px] tablet:pl-[10px] xl:pl-[50px] xxl:pl-[0px] 2xl:w-full">
+        <div className="w-full text-center tablet:w-[600px] tablet:pl-[10px] lg:w-[800px] xl:pl-[50px] xxl:pl-[0px] 2xl:w-full">
           <p
             className={`${montserrat400.className} pt-6 text-[24px] font-medium text-title-brown 
             tablet:-mt-8 tablet:pt-2 tablet:text-[24px] 
+            lg:text-[40px]
             xl:-mt-8 xl:pt-2 xl:text-5xl 
             xxl:-mt-8 xxl:pt-2 xxl:text-7xl 
             2xl:-mt-8 2xl:pt-2 2xl:text-7xl `}
@@ -43,7 +44,8 @@ export default function Introduction() {
           </p>
           <p
             className={`${montserrat400.className} pt-1 text-[14px] font-light text-subtitle-home-green 
-            tablet:text-[14px] 
+            tablet:text-[14px]
+            lg:text-[22px] 
             xl:text-[35px] 
             2xl:pt-[25px] 2xl:text-[40px]`}
           >
@@ -52,6 +54,7 @@ export default function Introduction() {
           <div
             className={`${montserrat400.className} mx-auto w-fit pr-2 pt-[40px] text-center text-[19px] text-subtitle-home-green 
             tablet:pt-[80px] tablet:text-[20px]
+            lg:text-[35px]
             xl:pt-[80px]  xl:text-[50px]
             2xl:text-[70px]`}
           >

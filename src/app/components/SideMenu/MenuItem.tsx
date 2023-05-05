@@ -66,7 +66,9 @@ export default function MenuItem() {
           transition: { duration: 1 },
         }}
       >
-        <p className={yaldevi.className}>MICROPIGMENTAÇÃO DE SOBRANCELHAS</p>
+        <a href="#anchor">
+          <p className={yaldevi.className}>MICROPIGMENTAÇÃO DE SOBRANCELHAS</p>
+        </a>
       </motion.li>
       <motion.li
         variants={variants}
