@@ -33,7 +33,7 @@ export default function Introduction() {
         />
         <div className="w-full text-center tablet:w-[600px] tablet:pl-[10px] lg:w-[800px] xl:pl-[50px] xxl:pl-[0px] 2xl:w-full">
           <p
-            className={`${montserrat400.className} pt-6 text-[24px] font-medium text-title-brown 
+            className={`${montserrat400.className} pt-6 text-[22px] font-medium text-title-brown 
             tablet:-mt-8 tablet:pt-2 tablet:text-[24px] 
             lg:text-[40px]
             xl:-mt-8 xl:pt-2 xl:text-5xl 
@@ -43,7 +43,7 @@ export default function Introduction() {
             Olá, me chamo Dai Oliveira
           </p>
           <p
-            className={`${montserrat400.className} pt-1 text-[14px] font-light text-subtitle-home-green 
+            className={`${montserrat400.className} pt-1 text-[12px] font-light text-subtitle-home-green 
             tablet:text-[14px]
             lg:text-[22px] 
             xl:text-[35px] 
@@ -52,7 +52,7 @@ export default function Introduction() {
             TRABALHO COM SOBRANCELHAS E CÍLIOS
           </p>
           <div
-            className={`${montserrat400.className} mx-auto w-fit pr-2 pt-[40px] text-center text-[19px] text-subtitle-home-green 
+            className={`${montserrat400.className} mx-auto w-fit pr-2 pt-[40px] text-center text-[17px] text-subtitle-home-green 
             tablet:pt-[80px] tablet:text-[20px]
             lg:text-[35px]
             xl:pt-[80px]  xl:text-[50px]

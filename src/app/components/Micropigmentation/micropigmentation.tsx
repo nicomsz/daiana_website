@@ -15,32 +15,30 @@ const josefinsans = JosefinSans({
 export default function Micropigmentation() {
   return (
     <div
-      className="h-screen w-full bg-background-color pt-8 lg:h-full lg:pt-20"
+      className="h-fit max-h-screen w-full bg-background-color pt-8 lg:h-full lg:pt-20"
       id="anchor"
     >
       <div className="text-center">
-        <div className="mx-auto w-fit">
-          <motion.div
-            className="flex h-[3px] w-[0%] bg-black"
-            whileInView={{
-              width: '100%',
-              transitionDuration: '1.0s',
-            }}
-          ></motion.div>
-          <p
-            className={`${josefinsans.className} pb-2 pt-4 text-2xl font-semibold lg:pt-7 lg:text-7xl`}
-          >
-            MICROPIGMENTAÇÃO DE SOBRANCELHAS
-          </p>
-          <motion.div
-            className="h-[3px] w-[0%] bg-black"
-            whileInView={{
-              width: '100%',
-              transitionDuration: '1.0s',
-            }}
-          ></motion.div>
-        </div>
-        <div className={`${montserrat400.className} `}>
+        <motion.div
+          className="flex h-[3px] w-[0%] bg-black"
+          whileInView={{
+            width: '100%',
+            transitionDuration: '1.0s',
+          }}
+        ></motion.div>
+        <p
+          className={`${josefinsans.className} pb-2 pt-4 text-2xl font-semibold lg:pt-7 lg:text-7xl`}
+        >
+          MICROPIGMENTAÇÃO DE SOBRANCELHAS
+        </p>
+        <motion.div
+          className="h-[3px] w-[0%] bg-black"
+          whileInView={{
+            width: '100%',
+            transitionDuration: '1.0s',
+          }}
+        ></motion.div>
+        <div className={`${montserrat400.className} bg-background-color`}>
           <p className="pt-12 text-3xl lg:pt-20 lg:text-6xl">O que é?</p>
           <p className="mx-4 pt-8 text-sm lg:mx-16 lg:pt-16  lg:text-3xl">
             Micropigmentação de Sobrancelhas é um procedimento estético que visa

@@ -15,7 +15,9 @@ export default function Home() {
       <Example />
       <Introduction />
       <AboutMe />
-      <Micropigmentation />
+      <div className="bg-background-color">
+        <Micropigmentation />
+      </div>
     </>
   )
 }
