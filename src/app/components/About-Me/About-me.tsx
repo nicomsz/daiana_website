@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
-import DaiPhoto from '../../public/images/dai-photo2.png'
-import ArrowDown from '../../public/images/arrow_down_download_save_icon_123720.svg'
+import DaiPhoto from '../../../../public/images/dai-photo2.png'
+import ArrowDown from '../../../../public/images/arrow_down_download_save_icon_123720.svg'
 import { Montserrat } from '@next/font/google'
 import { motion } from 'framer-motion'
 const montserrat200 = Montserrat({

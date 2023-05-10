@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import DaiImage from '../../public/images/dai-photo.png'
+import DaiImage from '../../../../public/images/dai-photo.png'
 import Background from './Background'
 import { Montserrat } from '@next/font/google'
 import { motion } from 'framer-motion'

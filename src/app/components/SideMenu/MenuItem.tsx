@@ -3,10 +3,8 @@ import * as React from 'react'
 import { motion } from 'framer-motion'
 import { Yaldevi, Sacramento } from '@next/font/google'
 import Image from 'next/image'
-import WhatsappIcon from '../../public/images/whatsapp-svgrepo-com.svg'
-import EmailIcon from '../../public/images/email-svgrepo-com.svg'
-
-import DaiIcon from '../../public/images/DaiIcon.svg'
+import DaiIcon from '../../../../public/images/DaiIcon.svg'
+import { EnvelopeSimple } from '@phosphor-icons/react'
 const yaldevi = Yaldevi({
   subsets: ['latin'],
   weight: ['400'],
@@ -113,27 +111,21 @@ export default function MenuItem() {
       >
         <p className={`${yaldevi.className} pl-8 lg:pl-8`}>LASH LIFTING</p>
       </motion.li>
-      <motion.li
-        className="flex flex-row gap-6 lg:pl-[100px]"
-        variants={variants}
-      >
+      <motion.li className="flex flex-row" variants={variants}>
         <a href="https://wa.me/+5547992879838" target="_blank" rel="noreferrer">
-          <Image
-            src={WhatsappIcon}
-            width={50}
-            height={50}
-            alt="Whatsapp icon Click to talk"
-            className="h-[40px] w-[70px] lg:h-[50px] lg:w-[50px]"
-          />
+          <div className="relative h-[40px] w-[40px] lg:h-[47px] lg:w-[70px]">
+            <Image
+              src="/images/whatsapp-svgrepo-com.svg"
+              alt="Whatsapp icon Click to talk"
+              fill
+            />
+          </div>
         </a>
+        <div className="grow" />
         <a href="mailto:daianablu05@gmail.com">
-          <Image
-            src={EmailIcon}
-            width={50}
-            height={50}
-            alt="Email Click to send email"
-            className="h-[40px] w-[70px] lg:h-[50px] lg:w-[50px]"
-          />
+          <div className="h-[40px] w-[40px] lg:h-[50px] lg:w-[50px]">
+            <EnvelopeSimple color="#c95918" weight="duotone" size="fill" />
+          </div>
         </a>
       </motion.li>
     </>

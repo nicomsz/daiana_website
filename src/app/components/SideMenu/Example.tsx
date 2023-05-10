@@ -11,7 +11,7 @@ const sidebar = {
     clipPath: `circle(${500 + 300}px at 40px 40px)`,
     transition: {
       type: 'spring',
-      stiffness: 20,
+      stiffness: 40,
       restDelta: 2,
     },
   }),
@@ -21,7 +21,7 @@ const sidebar = {
       delay: 0.5,
       type: 'spring',
       stiffness: 400,
-      damping: 40,
+      damping: 35,
     },
   },
 }
@@ -40,7 +40,7 @@ export const Example = () => {
       className="fixed inset-y-0 h-[500px] w-[300px]"
     >
       <motion.div
-        className="absolute inset-y-0 left-0 h-[500px] w-[200px] rounded-r-3xl rounded-bl-3xl border-[0.5px] border-solid border-black bg-slate-100 lg:h-[915px] lg:w-[250px]"
+        className="absolute inset-y-0 left-0 h-[500px] w-[200px] rounded-r-3xl rounded-bl-3xl border-[0.5px] border-solid border-black bg-slate-100 lg:h-[815px] lg:w-[250px]"
         variants={sidebar}
       />
       <MenuToggle toggle={() => toggleOpen()} />
