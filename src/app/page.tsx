@@ -22,7 +22,7 @@ export default function Home() {
       <AboutMe />
       <Micropigmentation />
       <div className="pb-8 pt-4 text-center text-6xl">
-        <p className={sacramento.className}>Vamos criar algo juntos?</p>
+        <p className={sacramento.className}>Venha nos visitar!</p>
       </div>
       <GoogleMap />
     </>
