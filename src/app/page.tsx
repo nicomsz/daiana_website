@@ -4,8 +4,12 @@ import Introduction from './components/Introduction/Introduction'
 import AboutMe from './components/About-Me/About-me'
 import Micropigmentation from './components/Micropigmentation/micropigmentation'
 import GoogleMap from './components/GoogleMap/GoogleMap'
+import { Sacramento } from '@next/font/google'
 
-// import TypeWritterText from './components/TypeWritterText'
+const sacramento = Sacramento({
+  subsets: ['latin'],
+  weight: ['400'],
+})
 
 export default function Home() {
   return (
@@ -17,6 +21,9 @@ export default function Home() {
       <Introduction />
       <AboutMe />
       <Micropigmentation />
+      <div className="pb-8 pt-4 text-center text-6xl">
+        <p className={sacramento.className}>Vamos criar algo juntos?</p>
+      </div>
       <GoogleMap />
     </>
   )

@@ -60,56 +60,56 @@ export default function MenuItem() {
       </motion.li>
       <motion.li
         variants={variants}
-        className="rounded-2xl bg-menu-item-rose p-[0.2rem] text-center text-[0.7rem] lg:p-2 lg:text-lg"
+        className="flex h-[45px] items-center rounded-2xl bg-menu-item-rose text-center text-xs lg:h-[70px] lg:p-4 lg:text-[17px]"
         whileHover={{
           scale: 1.1,
           transition: { duration: 1 },
         }}
       >
-        <a href="#anchor">
-          <p className={yaldevi.className}>MICROPIGMENTAÇÃO DE SOBRANCELHAS</p>
-        </a>
+        <p className={`${yaldevi.className} mx-auto`}>
+          MICROPIGMENTAÇÃO DE SOBRANCELHAS
+        </p>
       </motion.li>
       <motion.li
         variants={variants}
-        className="rounded-2xl bg-menu-item-rose p-[0.8rem] text-center text-[0.64rem] lg:p-2 lg:text-lg"
+        className="flex h-[45px] items-center rounded-2xl bg-menu-item-rose text-center text-[13px] lg:h-[70px] lg:text-[17px]"
         whileHover={{
           scale: 1.1,
           transition: { duration: 1 },
         }}
       >
-        <p className={yaldevi.className}>DESIGN DE SOBRANCELHAS</p>
+        <p className={`${yaldevi.className} mx-auto`}>DESIGN DE SOBRANCELHAS</p>
       </motion.li>
       <motion.li
         variants={variants}
-        className="break-keep rounded-2xl bg-menu-item-rose p-[0.6rem] text-center text-[0.64rem] lg:p-[25px] lg:text-[14px]"
+        className="flex h-[45px] items-center rounded-2xl bg-menu-item-rose text-center text-xs lg:h-[70px] lg:text-[17px]"
         whileHover={{
           scale: 1.1,
           transition: { duration: 1 },
         }}
       >
-        <p className={`${yaldevi.className} pl-5 lg:pl-3`}>BROWN LAMINATION</p>
+        <p className={`${yaldevi.className} mx-auto`}>BROWN LAMINATION</p>
       </motion.li>
       <motion.li
         variants={variants}
-        className="rounded-2xl bg-menu-item-rose p-[0.6rem] text-center text-[0.7rem] lg:p-[25px] lg:text-[14px]"
+        className="flex h-[45px] items-center rounded-2xl bg-menu-item-rose text-center text-xs lg:h-[70px] lg:text-[17px]"
         whileHover={{
           scale: 1.1,
           transition: { duration: 1 },
         }}
       >
-        <p className={`${yaldevi.className} pl-4`}>EXTENSÃO DE CÍLIOS</p>
+        <p className={`${yaldevi.className} mx-auto`}>EXTENSÃO DE CÍLIOS</p>
       </motion.li>
 
       <motion.li
         variants={variants}
-        className="rounded-2xl bg-menu-item-rose p-[0.6rem] text-center text-[0.7rem] lg:p-[17px] lg:text-lg"
+        className="flex h-[45px] items-center rounded-2xl bg-menu-item-rose text-center text-xs lg:h-[70px] lg:text-[17px]"
         whileHover={{
           scale: 1.1,
           transition: { duration: 1 },
         }}
       >
-        <p className={`${yaldevi.className} pl-8 lg:pl-8`}>LASH LIFTING</p>
+        <p className={`${yaldevi.className} mx-auto`}>LASH LIFTING</p>
       </motion.li>
       <motion.li className="flex flex-row" variants={variants}>
         <a href="https://wa.me/+5547992879838" target="_blank" rel="noreferrer">
